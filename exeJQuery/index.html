@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api CDN Jquery</title>
+    <script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="search">BUSCA</div>
+</body>
+<script>
+    $.getJSON('https://api.myjson.com/bins/tar0f', function(data) {
+        console.log(data);
+
+        function mostrarTitols(){
+            var cuentos = data.books;
+            $.each(cuentos, function(key, value){
+                var $titulo = $('<p/>').html(value.titulo);
+                $('#search').append($titulo);
+        });
+        };
+        mostratTitols();
+    });
+</script>
+</html>
