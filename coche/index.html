@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coche</title>
+</head>
+<body>
+    <h2>¿CUantas puertas tiene tu coche?</h2>
+    <p id="demo"></p>
+    <input type="text" id="texto"/>  
+    <button type="submit" onclick="puertasIntroducidas()" >Manda</button>
+
+
+    <script>
+       function puertasIntroducidas(){ 
+            let puertas;
+            puertas = document.getElementById("texto").value;
+
+            if(puertas == 3){
+                console.log("EL coche es deportivo" + puertas);
+            }
+            //console.log(puertas);
+            document.getElementById("demo").innerHTML= puertas;
+       }
+    </script>
+</body>
+</html>
