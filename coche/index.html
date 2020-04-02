@@ -6,7 +6,7 @@
     <title>Coche</title>
 </head>
 <body>
-    <h2>¿CUantas puertas tiene tu coche?</h2>
+    <h2>¿Cuantas puertas tiene tu coche?</h2>
     <p id="demo"></p>
     <input type="text" id="texto"/>  
     <button type="submit" onclick="puertasIntroducidas()" >Manda</button>
@@ -18,10 +18,13 @@
             puertas = document.getElementById("texto").value;
 
             if(puertas == 3){
-                console.log("EL coche es deportivo" + puertas);
+                document.write("EL coche es deportivo");
+            }else if(puertas == 5){
+                document.write("El coche es familiar");
+            }else{
+                document.write("¿Seguro que el coche tiene " +puertas + " numero de puertas?.")
             }
-            //console.log(puertas);
-            document.getElementById("demo").innerHTML= puertas;
+            
        }
     </script>
 </body>

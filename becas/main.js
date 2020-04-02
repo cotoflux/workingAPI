@@ -5,9 +5,7 @@ function mandar(){
     let paroAlumno = document.getElementById("paro").value;
 
     
-    if(edadAlumno>=18 && tituloAlumno == "si"){
-        document.write("La essuela puede ofrecerte un beca");
-    } else if(edadAlumno >= 18 &&  paroAlumno == "si"){
+    if(edadAlumno>=18 && (tituloAlumno == "si" || paroAlumno =="si")){
         document.write("La essuela puede ofrecerte un beca");
     } else {
         document.write("La escuela no puede ofrecerte una beca");
