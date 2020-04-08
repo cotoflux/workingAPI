@@ -1,13 +1,12 @@
 function mandar(){
+    
+    var text = " ";
+    var i = 100;
 
-var numero1 = parseInt(document.getElementById("numero1").value);
-var numero2 = parseInt(document.getElementById("numero2").value);
+        while(i>=0){
+            text += i +"<br>";
+            i = i - 2;
+        } 
 
-
-    if(numero1<0 ^ numero2<0){
-        document.getElementById("quees").innerHTML = "Un dels dos números és negatiu";
-    } else {
-        document.getElementById("quees").innerHTML = " ";
-    }
-
+    document.getElementById("parells").innerHTML = text;
 }
