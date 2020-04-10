@@ -1,9 +1,20 @@
 function mandar(){
 
-document.getElementById("misatge1").innerHTML = "Nuria";
-document.getElementById("misatge2").innerHTML = "Puig";
-console.log("Nuria");
-console.log("Puig");
-window.alert("Nuria Puig");
-document.write("Nuria Puig");
+var notes = document.getElementById("notes").value;
+var notasClase=[];
+var notaTotal = 0;
+
+    for(i=0; i<notes; i++){
+        var miNota = parseFloat(prompt("Introduce la nota del estudiante" + i));
+        notasClase.push(miNota);
+    }
+
+    for(i=0; i<notes; i++){
+        
+        notaTotal = notaTotal + notasClase[i];
+    }
+
+    var notaMedia = notaTotal / notes;
+    document.getElementById("notaMedia").innerHTML = notaMedia;  
+
 }

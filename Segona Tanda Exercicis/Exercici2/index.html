@@ -6,11 +6,15 @@
     <title>Escuela de idiomas</title>
 </head>
 <body>
-    <h2>Bienvenido a la escuela</h2>
-    <p id="misatge1">El meu</p>
-    <p id="misatge2">nom es...</p>
+    <h2>Benvingut a l'escola</h2>
+    <p>Introdueix el numero de notes a introduir per calcular la mitjana:</p>
+    <input type="number" id="notes"/><br>
+    <br>
+    <button type="submit" onclick="mandar()" >Clicka aquí per calcular la mitjana!</button><br>
+    
+    <p>La mitja es:</p><br>
 
-    <button type="submit" onclick="mandar()" >Clicka aquí per saber-ho!</button>
+    <div id="notaMedia"></div>
 
     <script src="main.js" type="text/javascript">
 
