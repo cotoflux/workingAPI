@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+</head>
+<body>
+
+    <p>Exercici 3
+        Volem crear un programa per tal que l’usuari jugui a encertar un nº de l’1 al 100 que l’ordinador
+        haurà “pensat” prèviament. El programa haurà de demanar un nº per teclat al jugador i haurà de
+        mostrar, en funció del nº introduït, un dels següents missatges:
+        Nº massa baix
+        Nº massa alt
+        Has encertat!
+        Aquest procés s’ha de repetir fins que l’usuari encerti el nº pensat per l’ordinador.
+        Ajuda: Math.floor((Math.random() * 10) + 1);</p>
+
+
+    <h2>Introdueix el teu número aquí:</h2>
+    <p>Recorda son números enters</p>
+    <input type="number" id="aposta"/><br>
+    <br>
+    <button type="submit" onclick="mandar()" >Fes click quant estiguis segur!</button><br>
+    
+    <p>Pistes:</p><br>
+
+    <div id="pistes"></div>
+
+    <script src="main.js" type="text/javascript">
+
+    </script>
+</body>
+</html>

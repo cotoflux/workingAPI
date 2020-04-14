@@ -21,25 +21,38 @@ var notaMenor;
     var notaMedia = notaTotal / notes;
     document.getElementById("notaMedia").innerHTML = notaMedia;  
     
+    notaMaxima();
+    document.getElementById("maxima").innerHTML = notaMayor;
+    notaMinima();
+    document.getElementById("minima").innerHTML = notaMenor;
+
+
+}
+
+function notaMaxima(miNota){
+    var miNota;
+    var notaMayor;
     for(i=0; i<notes; i++){
 
         if(miNota>notasClase[i]){
             notaMayor = miNota
+            return notaMayor;
         }
-        document.getElementById("maxima").innerHTML = notaMayor;
+        return notaMayor;
     }
+    return notaMayor;
+}
 
+function notaMinima(miNota2){
     for(j=0; j<notes; j++){
         notaMenor = miNota2;
         if(miNota2>notasClase[j]){
             
         }else if(miNota2<=notasClase[j]){
             notaMenor = miNota2;
+            
         }
-        document.getElementById("minima").innerHTML = notaMenor;
+        
     }
-
-
-
-
+    return notaMenor;
 }
