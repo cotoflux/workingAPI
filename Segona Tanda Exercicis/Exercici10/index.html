@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+</head>
+<body>
+
+    <p>Exercici 10
+        Realitzar un programa on se li mostraran 4 opcions a l’usuari per pantalla:
+        1.- Quadrat
+        2.-Triangle
+        3.- Rectangle
+        4.- Cercle
+        Segons l’opció escollida haurà d’introduir unes dades o altres perquè el programa mostri per pantalla l’àrea
+        del polígon escollit.
+    </p>
+
+
+    <h1>Calculador d'àrees:</h1>
+    <h4>Cuadrat</h4>
+    <p>Entra el costat en cm</p>
+    <input type="number" id="costat"/><br>
+    <br>
+    <button type="submit" onclick="cuadrat()" >Dona'm l'àrea</button>
+    <br>
+    <p>L'àrea del cuadrat es: </p>
+    <div id="resultatCuadrat"></div>
+
+    <hr>
+
+    <h4>Triangle</h4>
+    <p>Entra la base</p>
+    <input type="number" id="base"/><br>
+    <br>
+
+    <p>Entra la altura</p>
+    <input type="number" id="altura"/><br>
+    <br>
+    <button type="submit" onclick="triangle()" >Dona'm l'àrea</button>
+    <br>
+    <p>L'àrea del triangle es: </p>
+    <div id="resultatTriangle"></div>
+
+    <hr>
+
+    <h4>Rectangle</h4>
+    <p>Entra la base</p>
+    <input type="number" id="base1"/><br>
+    <br>
+
+    <p>Entra la altura</p>
+    <input type="number" id="altura1"/><br>
+    <br>
+    <button type="submit" onclick="rectangle()" >Dona'm l'àrea</button>
+    <br>
+    <p>L'àrea del rectangle es: </p>
+    <div id="resultatRectangle"></div>
+
+    <hr>
+
+    <h4>Cercle</h4>
+    <p>Entra el radi</p>
+    <input type="number" id="radi"/><br>
+    <br>
+
+    <button type="submit" onclick="cercle()" >Dona'm l'àrea</button>
+    <br>
+    <p>L'àrea del cerclees: </p>
+    <div id="resultatCercle"></div>
+
+    <hr>
+    <script src="main.js" type="text/javascript">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+</head>
+<body>
+
+    <p>Exercici 8
+        Crea un programa on l’usuari introdueixi una temperatura en ºC i es mostri per pantalla la conversió en ºFahrenheit
+        y en Kelvin
+    </p>
+
+
+    <h2>Introdueix la temperatura en graus Celsius:</h2>
+    <input type="number" id="celsius"/><br>
+    <br>
+    <button type="submit" onclick="celciusFar()" >Tradueix a fahrenheit</button>
+    <br>
+    <button type="submit" onclick="celciusKel()" >Tradueix a kelvin</button>
+    <br>
+
+    <div id="celsiusFar">De Celcius a Fahrenheit són:</div>
+    <div id="celsiusKel">De Celcius a Kelvin són:</div>
+
+    
+    <h2>Introdueix la temperatura en graus Fahrenheit:</h2>
+    <input type="number" id="fahrenheit"/><br>
+    <br>
+    <button type="submit" onclick="fahrenheitCel()" >Tradueix a Celsius</button><br>
+    <button type="submit" onclick="fahrenheitKel()" >Tradueix a Kelvin</button><br>
+
+    <div id="fahrenheitCel">De Fahrenheit a Celsius són:</div>
+    <div id="fahrenheitKel">De Fahrenheit a Kelvin són:</div>
+    
+
+    <h2>Introdueix la temperatura en graus Kelvin:</h2>
+    <input type="number" id="kelvin"/><br>
+    <br>
+    <button type="submit" onclick="kelvinCel()" >Tradueix a Celsius</button><br>
+    <button type="submit" onclick="kelvinFar()" >Tradueix a Kelvin</button><br>
+
+    <div id="kelvinCel">De Kelvin a Celsius són:</div>
+    <div id="kelvinFar">De Kelvin a Fahrenheit són:</div>
+  
+
+    <script src="main.js" type="text/javascript">
+
+    </script>
+</body>
+</html>
